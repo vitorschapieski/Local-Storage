@@ -1,0 +1,55 @@
+.right .r-cadastro.ativar{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.right .r-cadastro{
+    display: none;
+    animation: go-back .8s;
+}
+.r-loginBotaoCadastrar{
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 15px;
+    transition: .6s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.r-loginBotaoCadastrar:hover{
+    border: 1px solid white;
+}
+.right .r-cadastro .r-cadConteiner{
+    background-color: rgba(255, 255, 255, 0.226);
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    gap: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.411);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.r-cadLink{
+    cursor: pointer;
+    color: rgb(15, 73, 15);
+
+}
+.r-cadLink:hover{
+    color: white;
+}
+
+
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
